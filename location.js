@@ -1,4 +1,4 @@
 navigator.geolocation.getCurrentPosition(function(position){
-	var longitude = position.coords.longitude;
-	var latitude = position.coords.latitude;
+	var lon = position.coords.longitude;
+	var lat = position.coords.latitude;
 });
