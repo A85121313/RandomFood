@@ -9,7 +9,7 @@
 			alert("welcome!")
 		}
 	</script>
-	<body onload="welcome()" text="white" bgcolor="black"> 
+	<body text="white" bgcolor="black"> 
 		<h1 align="center">hello world!<h1><hr>
 		<center>
 		哈囉！<br>
