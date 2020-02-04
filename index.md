@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title> My first website.</title>
+		<title> My website.</title>
 		<meta http-equiv="utf-8">
 		<script src="location.js">
 		</script>						      
