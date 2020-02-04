@@ -10,7 +10,7 @@
 	</head>	
 	<body text="white" bgcolor="black"> 
 		<h1 align="center">Jimmy's foodcode<h1> <hr>
-		<center>哈囉！</center><br>
+		<center>哈囉！</center>
 	</body>
 </html>
 			
