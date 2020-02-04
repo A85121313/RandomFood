@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title> My first website.</title>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta charset="UTF-8">
 	</head>
 	<script type="text/javascript" language="javascript">
 		function welcome()
