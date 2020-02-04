@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 	<head>
 		<title> My first website.</title>
@@ -8,7 +7,3 @@
 	</head>	
 	<body text="white" bgcolor="black"> 
 		<h1 align="center">Jimmy's foodcode<h1> <hr>
-	</body>
-</html>
-			
-	
