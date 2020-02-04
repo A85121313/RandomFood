@@ -9,10 +9,8 @@
 		</script>
 	</head>	
 	<body text="white" bgcolor="black"> 
-		<h1 align="center">hello world!<h1><hr>
-		<center>
-		哈囉！<br>
-		</center>
+		<h1 align="center">Jimmy's foodcode<h1> <hr>
+		<center>哈囉！</center><br>
 	</body>
 </html>
 			
