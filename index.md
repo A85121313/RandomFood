@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<title> My first website.</title>
-		<meta charset="UTF-8">
+		<meta http-equiv="utf-8">
 	</head>
 	<script type="text/javascript" language="javascript">
 		function welcome()
@@ -10,7 +9,7 @@
 			alert("welcome!")
 		}
 	</script>
-	<body onload="welcome()" vlink="white" text="white" bgcolor="black"> 
+	<body onload="welcome()" text="white" bgcolor="black"> 
 		<h1 align="center">hello world!<h1><hr>
 		<center>
 		哈囉！<br>
