@@ -9,6 +9,9 @@
 				alert("瀏覽器不支援分享地理位置喔！");
 			}
 		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AcGg9-ZTvKKQz-76qcgq60lZRI7HSbU&window.load"</script>		
+		<div id="map"></div>		
+		<script src="location.js"></script>		
 	</head>	
 	<body text="white" bgcolor="black"> 
 		<h1 align="center">Jimmy's foodcode<h1> <hr>
