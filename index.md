@@ -17,7 +17,7 @@
 		<h1 align="center">Jimmy's foodcode<h1> <hr>
 	<div class="left">
 	<h4>Current Location</h4>
-	<div id="map" style="width:400px; height:300px"></div>
+	<div id="currentmap" style="width:400px; height:300px"></div>
 	</div>		
 
  	
