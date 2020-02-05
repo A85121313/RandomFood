@@ -16,7 +16,7 @@
 	<body text="white" bgcolor="black"> 
 		<h1 align="center">Jimmy's foodcode<h1> <hr>
 	<div class="left">
-	<h2>Current Location</h2>
+	<h4>Current Location</h4>
 	<div id="map_1" style="width:400px; height:300px"></div>
 	</div>		
 
