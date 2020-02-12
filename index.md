@@ -16,6 +16,7 @@
 		<h1 align="center"> Jimmy's WHATTOEAT <h1>
 		<section>
 			<article>
+				<h4> Current Location </h4>
 				<div id="map1"></div>
 				<script>
 					navigator.geolocation.getCurrentPosition(function(position){
