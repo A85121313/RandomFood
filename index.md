@@ -13,7 +13,7 @@
 	</head>
 	
 	<body text="white" bgcolor="black">
-		<h1 align="center"> Jimmy's WHATTOEAT <h1>
+		<h1 align="center"> Jimmy's WHATTOEAT <h1><br>
 		<section>
 			<article>
 				<h4> Current Location </h4>
@@ -31,5 +31,3 @@
 				</script>
 			</article>
 		</section>
-	</body>
-</html>
