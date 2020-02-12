@@ -12,7 +12,7 @@
 	</head>
 	
 	<body text="white" bgcolor="black">
-		<h1 align="center"> Jimmy's WHATTOEAT <h1><br>
+		<h1 align="center"> Jimmy's WHATTOEAT <h1><hr>
 		<section>
 			<article>
 				<h4> Current Location </h4>
