@@ -1,23 +1,34 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title> My website.</title>
-		<meta http-equiv="utf-8">
-		<script src="location.js">
-		</script>
-		<script language="javascript">
-			if(!("geolocation" in navigator)){
-				alert("瀏覽器不支援分享地理位置喔！");
+		<meta charset="urf-8">
+		<title> Random Food</title>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AcGg9-ZTvKKQz-76qcgq60lZRI7HSbU"></script>
+		<style type="text/css">
+            #map1{
+				height : 300px;
+				width : 400px;
 			}
-		</script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AcGg9-ZTvKKQz-76qcgq60lZRI7HSbU"></script>
-		<div id="map"></div>		
-		<script src="location.js"></script>		
-	</head>	
-	<body text="white" bgcolor="black"> 
-		<h1 align="center">Jimmy's foodcode<h1> <hr>
-	<div class="left">
-	<h4>Current Location</h4>
-	<div id="currentmap" style="width:400px; height:300px"></div>
-	</div>		
-
- 	
+		</style>
+	</head>
+	
+	<body text="white" bgcolor="black">
+		<h1 align="center"> Jimmy's WHATTOEAT <h1>
+		<section>
+			<article>
+				<div id="map1"></div>
+				<script>
+					navigator.geolocation.getCurrentPosition(function(position){
+					var pc = position.coords;
+					var lat = pc.latitude ;
+					var lng = pc.longitude;
+					var map = new google.maps.Map(document.getElementById("map1"), {
+						center: new google.maps.LatLng(lat,lng),
+						zoom: 12	 
+						});
+					});
+				</script>
+			</article>
+		</section>
+	</body>
+</html>
