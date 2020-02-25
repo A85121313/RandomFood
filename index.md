@@ -20,7 +20,7 @@
     <h1 align="center"> Jimmy's WHATTOEAT <h1><hr>
       <section>
         <article>
-	  <h4> Current Location& Your Choices </h4>
+	  <h4> Current Location& Choices </h4>
 	  <div id="map"></div>
 	  <script>
 	    var map;
@@ -33,26 +33,26 @@
 		center: currentcenter,
 		zoom: 17
 	    });
-		var request = {
-			location: currentcenter	,
-			radius: '500',
-			type: ['restaurant', 'food', 'cafe']
-		};
-		service = new google.maps.places.PlacesService(map);
-		service.nearbySearch(request, callback);
-		function callback(results, status) {
-			if (status == google.maps.places.PlacesServiceStatus.OK) {
-				for (var i = 0; i < results.length; i++) {
-					createMarker(results[i]);
-				}
-			}
+	    var request = {
+		location: currentcenter	,
+		radius: '500',
+		type: ['restaurant', 'food', 'cafe']
+	    };
+	    service = new google.maps.places.PlacesService(map);
+	    service.nearbySearch(request, callback);
+	    function callback(results, status) {
+		if (status == google.maps.places.PlacesServiceStatus.OK) {
+		    for (var i = 0; i < results.length; i++) {
+		      createMarker(results[i]);
+		    }
 		}
-		function createMarker(place) {
-			var marker = new google.maps.Marker({
-				map: map,
-				position: place.geometry.location
-			});
-		}
+	    }
+	    function createMarker(place) {
+		var marker = new google.maps.Marker({
+		  map: map,
+		  position: place.geometry.location
+	       });
+	    }
 	    })
 	  </script>
 	</article>
