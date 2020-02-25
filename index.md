@@ -6,8 +6,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2AcGg9-ZTvKKQz-76qcgq60lZRI7HSbU&libraries=places"></script>
   <style type="text/css">
     #map {
-        height : 300px;
-	width : 400px;
+        height : 700px;
+	width : 800px;
     }
   </style>
   </head>
