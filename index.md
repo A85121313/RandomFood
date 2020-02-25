@@ -32,7 +32,7 @@
 	    });
 	    var request = {
 		location: currentcenter	,
-		radius: '500',
+		radius: '1500',
 		type: ['restaurant', 'food', 'cafe']
 	    };
 	    service = new google.maps.places.PlacesService(map);
