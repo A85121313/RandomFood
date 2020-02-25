@@ -28,7 +28,7 @@
 	    var currentcenter = new google.maps.LatLng(lat,lng);	
 	    map = new google.maps.Map(document.getElementById('map'), {
 		center: currentcenter,
-		zoom: 17
+		zoom: 15
 	    });
 	    var request = {
 		location: currentcenter	,
