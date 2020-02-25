@@ -25,6 +25,7 @@
 	  <script>
 	    var map;
 	    var service;
+	$(function(){		  
 	    navigator.geolocation.getCurrentPosition(function(position){
 	    var lat = position.coords.latitude;
 	    var lng = position.coords.longitude;
@@ -54,6 +55,7 @@
 	       });
 	    }
 	    })
+	});
 	  </script>
 	</article>
       </section>
