@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
   <meta charset="urf-8">
@@ -26,15 +25,14 @@
 	  <script>
 	    var map;
 	    var service;
-	    $(function(){
-		navigator.geolocation.getCurrentPosition(function(position){
-		var lat = position.coords.latitude;
-		var lng = position.coords.longitude;
-		var currentcenter = new google.maps.LatLng(lat,lng);	
-		map = new google.maps.Map(document.getElementById('map'), {
-			center: currentcenter,
-			zoom: 17
-		});
+	    navigator.geolocation.getCurrentPosition(function(position){
+	    var lat = position.coords.latitude;
+	    var lng = position.coords.longitude;
+	    var currentcenter = new google.maps.LatLng(lat,lng);	
+	    map = new google.maps.Map(document.getElementById('map'), {
+		center: currentcenter,
+		zoom: 17
+	    });
 		var request = {
 			location: currentcenter	,
 			radius: '500',
@@ -55,8 +53,7 @@
 				position: place.geometry.location
 			});
 		}
-		})
-	     });
+	    })
 	  </script>
 	</article>
       </section>
