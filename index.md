@@ -20,7 +20,7 @@
     <h1 align="center"> Jimmy's WHATTOEAT <h1><hr>
       <section>
         <article>
-	  <h4> Current Location </h4>
+	  <h4> Current Location& Your Choices </h4>
 	  <div id="map"></div>
 	  <script>
 	    var map;
