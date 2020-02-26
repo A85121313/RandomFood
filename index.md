@@ -29,7 +29,7 @@
 					var currentcenter = new google.maps.LatLng(lat,lng);	
 					map = new google.maps.Map(document.getElementById('map'), {
 						center: currentcenter,
-						zoom: 15
+						zoom: 16
 					});
 					var request = {
 						location: currentcenter	,
@@ -55,7 +55,6 @@
 						let infowindow = new google.maps.InfoWindow({
 							content: place.name
 						});
-						console.log(place.name+" "+place.geometry.location);
 						marker.addListener('click', function() {
 							infowindow.open(map, marker);
 							infowindow.setContent('<div style="color:#000000" id="name">'+place.name+'</div>');
