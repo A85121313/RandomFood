@@ -16,12 +16,11 @@
 		<h1 align="center"> Jimmy's WHATTOEAT <h1><hr>
 		<section>
 			<article>
-				<h4> Current Location& Choices </h4>
+				<h6> Current Location& Choices </h6>
 				<div id="map"></div>
 			<script>
 				var map;
 				var service;
-				var Infowindow;
 				var contentstring;
 				$(function(){		  
 					navigator.geolocation.getCurrentPosition(function(position){
@@ -35,7 +34,7 @@
 					var request = {
 						location: currentcenter	,
 						radius: '1500',
-						type: ['restaurant', 'food', 'cafe']
+						type: ['restaurant', 'food',]
 					};
 					
 					service = new google.maps.places.PlacesService(map);
@@ -52,19 +51,22 @@
 						var marker = new google.maps.Marker({
 							map: map,
 							position: place.geometry.location ,
-							title: place.name
 						});	
-						infowindow = new google.maps.InfoWindow({
-							content: marker.title
+						let infowindow = new google.maps.InfoWindow({
+							content: place.name
 						});
+						console.log(place.name+" "+place.geometry.location);
 						marker.addListener('click', function() {
 							infowindow.open(map, marker);
-						});	
+							infowindow.setContent('<div style="color:#000000" id="name">'+place.name+'</div>');
+						});
 					}
+					
 					})
-
 				});
 			</script>
 			
+		</article>
+		<article>
 		</article>
       </section>
